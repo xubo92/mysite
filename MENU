@@ -1,10 +1,7 @@
-Home
-    About me            [index.html]
-
-Research
-    Publications        [publication.html]
-    Software            [software.html]
-
-Courseworks
+Menu
+    Home            [index.html]
+    Research        [research.html]
+    Publications    [publications.html]
     Teaching		[teaching.html]
-    Courses         [course.html]
+    Projects        [projects.html]
+

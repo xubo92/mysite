@@ -1,24 +1,24 @@
 # jemdoc: menu{MENU}{index.html}
-= Chao Jiang 
+= Xubo Lyu 
 
 ~~~
-{}{img_left}{chao.jpeg}{alt text}{244.8px}{326.4px}{}
-Chao Jiang \n
+{}{img_left}{xubo.jpeg}{alt text}{244.8px}{326.4px}{}
+Xubo Lyu \n
 Ph.D. Student \n 
-[https://www.eng.auburn.edu/comp/ Department of Computer Science and Software Engineering] \n
-[http://auburn.edu/ Auburn University]  \n
-Contact: [chao@auburn.edu Email], [https://www.linkedin.com/in/chaojiang92/ Linkedin], [https://github.com/chao92 Github], [http://chaojiang.me/ Blog]
+Supervisor: [https://sfumars.com/mo-chen/ Dr. Mo Chen] \n
+Lab: [https://sfumars.com/ SFU MARS LAB] \n
+[https://www.sfu.ca/computing.html Department of Computing Science in Simon Fraser University] \n
+Contact: [xlv@sfu.ca Email], [https://github.com/xubo92 Github]
 ~~~
 
 == Short Bio 
-I am a Ph.D. student at Auburn University. I obtained my Master degree in ECE from University of Oklahoma at Tulsa under the supervision of [http://www.samuelcheng.info/ Prof. Samuel Cheng]. I got my Bachelor degree in Software Engineering, Northwest A\&F University.
+I'm a PhD Student in Computing Science at Simon Fraser University. My research interests mainly center around robotics, reinforment learning and optimal control. 
+In my spare time, I like playing basketball, DIYing robots and sometimes drawing with watercolor. I also like keeping track of the advances of rocket industry.
 == News 
-- \[10-03-2017\] "A community effort to protect genomic data sharing, collaboration and outsourcing" accepted by npj Genomic Medicine
+- \[14-03-2022\] Submitted a paper to ECCV 2022
+- \[18-05-2021\] Started internship at Huawei Vancouver Research Center 
 == Education 
-- Ph.D., Department of Computer Science and Software Engineering, Auburn University, Auburn, AL USA, Aug. 2017 - Present
-- M.S., School of Electrical and Computer Engineering, University of Oklahoma, Tulsa, OK USA, Aug. 2014 - Aug. 2016
-- B.E., College of Information Engineering, Northwest A\&F University, Yangling, Shaanxi China, Sep. 2010 - July 2014
-== Research Interests 
-- Data Mining 
-- Machine Learning 
-- Deep Learning 
+- Ph.D., Department of Computing Science, Simon Fraser University, Burnaby, BC CA, Sep. 2018 - Present
+- M.S., School of Control Science and Engineering, Beihang University, Beijing, China, Sep. 2015 - April. 2018
+- B.E., School of Control Science and Engineering, Northeast University at QinhuangDao, QinhuangDao, Hebei China, Sep. 2011 - July. 2015
+
