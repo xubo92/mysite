@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{fun.html}
-= Fun side-projects
+= Fun Side-Projects
 
 == Embedded Development
 - EspDetect: use ESP32 MCU and its module for deep learning-Based object detection  \n
