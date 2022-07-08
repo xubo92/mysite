@@ -1,3 +1,16 @@
 # jemdoc: menu{MENU}{fun.html}
-= A list of fun side-projects
+= Fun side-projects
 
+== Hardwares
+- ESP32-Based Object Detection via Deep Learning Models \n
+\[Source Code\] \[Trial\]
+
+== Softwares
+- FingerTap: a compact fingerprint recognition system \n
+[https://github.com/xubo92/Fingerprint-Recognition-System \[Source Code\]] \[Trial\]
+
+- Intro-RL: a user-friendly, entry-level library of reinforcement learning algorithms \n
+[https://github.com/xubo92/A-introduction-to-reinforcement-learning \[Source Code\]] \[Trial\]
+
+- OnlineWartegg: a online tool for Wartegg Test - a famous psychological test for personality analysis \n
+\[Source Code\] \[Trial\]
