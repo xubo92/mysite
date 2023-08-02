@@ -2,7 +2,7 @@
 = Side Projects
 
 == Embedded Development
-- RaspiDetect v1: run a real-time (~10FPS) deep learning-based object detection algorithm on Raspi 3B v1.2
+- RaspiDetect v1: run a real-time (\~10FPS) deep learning-based object detection algorithm on Raspi 3B v1.2 \n
 \[Source Code\] \[Trial\]
 
 - EspDetect: use ESP32 MCU and its module for deep learning-based object detection  \n
