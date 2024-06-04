@@ -1,0 +1,23 @@
+.profile{
+	float: right;
+    margin: 5px
+}
+.car_profile{
+	float: left;
+	margin: 10px;
+}
+a:visited {
+    color: #06a;
+    border-style: none;
+    text-decoration: underline;
+}
+
+a:link {
+    color: #06a;
+    border-style: none;
+    text-decoration: underline;
+}
+
+li{
+  margin: 10px 0;
+}
