@@ -2,10 +2,17 @@
 = Research Publications
 [https://scholar.google.ca/citations?user=xXurDVUAAAAJ&hl=en \[Google Scholar\]]
 
-== 2022
-- Multi-Agent Asynchronous Cooperation with Hierarchical Reinforcement Learning \n 
+
+
+== 2023
+- Task-Oriented Koopman-Based Control with Contrastive Encoder \n
+*Xubo Lyu*, Hanyang Hu, Seth Siriya, Ye Pu, Mo Chen \n
+/Conference on Robot Learning (CoRL), 2023 *(oral presentation, 6.6\% acceptance rate)*/ \n
+[https://openreview.net/pdf?id=q0VAoefCI2 \[Paper\]] [https://sites.google.com/view/kpmlilatsupp/ \[Project Overview\]]
+
+- Asynchronous, Option-Based Multi-Agent Policy Gradient: A Conditional Reasoning Approach \n 
 *Xubo Lyu*, Amin Banitalebi-Dehkordi, Mo Chen, Yong Zhang \n 
-/arXiv preprint 2022/ \n 
+/IEEE\/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023/ \n 
 [https://arxiv.org/abs/2203.15925 \[Paper\]] [https://sites.google.com/view/mahrlsupp/ \[Project Overview\]]
 
 == 2021
