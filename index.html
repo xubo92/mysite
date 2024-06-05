@@ -20,10 +20,14 @@
             font-size: 2.5em; /* Increased font size */
             font-weight: 500;
         }
-        p {
+        p.desc {
             color: #666;
             font-size: 1.2em;
             margin-top: 0;
+        }
+        p {
+            font-size: 1.4em;
+            margin:5px  auto
         }
         .icons {
             margin-top: 0em;
@@ -56,21 +60,21 @@
             font-size: 2em; /* Increased font size */
             font-weight: normal;
         }
-        .education {
+        .education, .work {
             width: 80%;
             margin: 20px auto; /* Center the education section */
         }
-        .education-row {
+        .education-row, .work-row {
             display: flex;
             align-items: center;
             margin-bottom: 20px; /* Space between each education row */
         }
-        .education-logo {
+        .education-logo, .work-logo{
             width: 80px; /* Adjust the width of the logo */
             height: 80px; /* Adjust the height of the logo */
             margin-right: 20px; /* Space between the logo and text */
         }
-        .education-text {
+        .education-text, .work-text{
             flex: 1; /* Take remaining space */
         }
     </style>
@@ -78,7 +82,7 @@
 </head>
 <body>
     <h1>Dr. Xubo Lyu</h1>
-    <p>I like building stuff for AI and robotics</p>
+    <p class="desc">I like building stuff for AI and robotics</p>
     <div class="icons">
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -90,24 +94,40 @@
     <div class="education">
         <h2> Eduation </h2>
         <div class="education-row">
-            <img src="./sfu_logo.png" alt="Simon Fraser University Logo" class="education-logo">
+            <img src="sfu_logo.png" alt="Simon Fraser University Logo" class="education-logo">
             <div class="education-text">
-                <p>Ph.D. in Computer Science at University 1</p>
+                <p>PhD in Computing Science at Simon Fraser University, supervised by Dr. Mo Chen.</p>
+                <a href="https://summit.sfu.ca/item/38049" target="_blank" style="text-decoration:none"><p><i>Thesis: "Efficient, interpretable robot learning via control-theoretic approaches".</i></p></a>
             </div>
         </div>
         <div class="education-row">
-            <img src="./Beihang_University_logo.svg" alt="Beihang University Logo" class="education-logo">
+            <img src="Beihang_University_logo.svg" alt="Beihang University Logo" class="education-logo">
             <div class="education-text">
-                <p>Master of Science in Robotics in University 2</p>
+                <p>Msc in Control Science and Engineering at Beihang University.</p>
             </div>
         </div>
         <div class="education-row">
-            <img src="./Northeastern_University_at_Qinhuangdao_logo.png" alt="Northeastern University Logo" class="education-logo">
+            <img src="Northeastern_University_at_Qinhuangdao_logo.png" alt="Northeastern University Logo" class="education-logo">
             <div class="education-text">
-                <p>Master of Science in Robotics in University 2</p>
+                <p>Bsc in Control Science and Engineering at Northeastern_University.</p>
             </div>
         </div>
         <!-- Add more education rows as needed -->
+    </div>
+    <div class="work">
+        <h2> Work Experience </h2>
+        <div class="work-row">
+            <img src="huawei_logo.png" alt="Huawei Technologies Canada Co. Ltd Logo" class="work-logo">
+            <div class="work-text">
+                <p>Associate Researcher, Huawei Technologies Canada.</p>
+            </div>
+        </div>
+        <div class="work-row">
+            <img src="horizon_robotics_logo.png" alt="Horizon Robotics Inc Logo" class="work-logo">
+            <div class="work-text">
+                <p>Algorithm Engineer, Horizon Robotics Inc.</p>
+            </div>
+        </div>
     </div>
     <!-- Publication Section -->
     <div class="section">
