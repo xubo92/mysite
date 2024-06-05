@@ -25,12 +25,16 @@
             font-size: 1.2em;
             margin-top: 0;
         }
-        p {
+        .education p {
+            font-size: 1.4em;
+            margin:5px  auto
+        }
+        .work p {
             font-size: 1.4em;
             margin:5px  auto
         }
         .icons {
-            margin-top: 0em;
+            margin-top: 0.5em;
         }
         .icons a {
             margin: 0 10px;
@@ -60,7 +64,7 @@
             font-size: 2em; /* Increased font size */
             font-weight: normal;
         }
-        .education, .work {
+        .education, .work, .publication{
             width: 80%;
             margin: 20px auto; /* Center the education section */
         }
@@ -70,25 +74,51 @@
             margin-bottom: 20px; /* Space between each education row */
         }
         .education-logo, .work-logo{
-            width: 80px; /* Adjust the width of the logo */
-            height: 80px; /* Adjust the height of the logo */
-            margin-right: 20px; /* Space between the logo and text */
-        }
-        .work-logo-hr {
-            width: 80px; /* Adjust the width of the logo */
-            height: 40px; /* Adjust the height of the logo */
+            width: 50px; /* Adjust the width of the logo */
+            height: 50px; /* Adjust the height of the logo */
             margin-right: 20px; /* Space between the logo and text */
         }
 
         .education-text, .work-text{
             flex: 1; /* Take remaining space */
         }
+
+        .paper {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            width: 70%;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .paper img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .citation {
+            flex: 1;
+        }
+        .citation h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: normal;
+        }
+        .citation p {
+            font-size: 1em;
+            color: #666;
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h1>Dr. Xubo Lyu</h1>
-    <p class="desc">I like building stuff for AI and robotics</p>
+    <p class="desc">I like to build AI-driven robotics solutions</p>
     <div class="icons">
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -129,16 +159,32 @@
             </div>
         </div>
         <div class="work-row">
-            <img src="horizon_robotics_logo.png" alt="Horizon Robotics Inc Logo" class="work-logo-hr">
+            <img src="horizon_robotics_logo.png" alt="Horizon Robotics Inc Logo" class="work-logo">
             <div class="work-text">
                 <p>Algorithm Engineer, Horizon Robotics Inc.</p>
             </div>
         </div>
     </div>
     <!-- Publication Section -->
-    <div class="section">
+    <div class="publication">
         <h2>Publications</h2>
-        <p>I enjoy hiking, reading science fiction, and experimenting with new technologies.</p>
+        <div class="paper">
+            <img src="kpmpaper_snapshot.png" alt="Koopman paper">
+            <div class="citation">
+                <h3>Task-Oriented Koopman-Based Control with Contrastive Encoder.</h3>
+                <p><b>Xubo Lyu</b>, Hanyang Hu, Seth Siriya, Ye Pu, Mo Chen. </p>
+                <p><i>7th Conference on Robot Learning (CoRL 2023), Atlanta, USA, 2023.</i></p>
+            </div>
+        </div>
+        <div class="paper">
+            <img src="asyncmarlpaper_snapshot.png" alt="async_mahrl paper">
+            <div class="citation">
+                <h3>Asynchronous, Option-Based Multi-Agent Policy Gradient: A Conditional Reasoning Approach.</h3>
+                <p><b>Xubo Lyu</b>, Amin Banitalebi-Dehkordi, Mo Chen, Yong Zhang</p>
+                <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2023), Detroit, USA, 2023.</i></p>
+            </div>
+        </div>
+        <!-- Add more publications as needed -->
     </div>
     <!-- Other Interests Section -->
     <div class="section">
