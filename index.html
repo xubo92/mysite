@@ -11,7 +11,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             margin: 0;
             background-color: #f4f4f9;
         }
@@ -27,7 +26,7 @@
             margin-top: 0;
         }
         .icons {
-            margin-top: 1em;
+            margin-top: 0em;
         }
         .icons a {
             margin: 0 10px;
@@ -41,6 +40,39 @@
             color: #666;
             margin-top: 5px;
         }
+        hr.style-two {	
+            width: 100%;
+            margin: 25px auto;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	    }
+        .section {
+            width: 80%;
+            margin: 20px 0;
+            text-align: left; /* Centered text */
+        }
+        h2 {
+            font-size: 2em; /* Increased font size */
+            font-weight: normal;
+        }
+        .education {
+            width: 80%;
+            margin: 20px auto; /* Center the education section */
+        }
+        .education-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space between each education row */
+        }
+        .education-logo {
+            width: 80px; /* Adjust the width of the logo */
+            height: 80px; /* Adjust the height of the logo */
+            margin-right: 20px; /* Space between the logo and text */
+        }
+        .education-text {
+            flex: 1; /* Take remaining space */
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -52,6 +84,50 @@
         <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="your_email@example.com" id="email-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+    <hr class="style-two">
+    <!-- Education Section -->
+    <div class="education">
+        <h2> Eduation </h2>
+        <div class="education-row">
+            <img src="./sfu_logo.png" alt="Simon Fraser University Logo" class="education-logo">
+            <div class="education-text">
+                <p>Ph.D. in Computer Science at University 1</p>
+            </div>
+        </div>
+        <div class="education-row">
+            <img src="./Beihang_University_logo.svg" alt="Beihang University Logo" class="education-logo">
+            <div class="education-text">
+                <p>Master of Science in Robotics in University 2</p>
+            </div>
+        </div>
+        <div class="education-row">
+            <img src="./Northeastern_University_at_Qinhuangdao_logo.png" alt="Northeastern University Logo" class="education-logo">
+            <div class="education-text">
+                <p>Master of Science in Robotics in University 2</p>
+            </div>
+        </div>
+        <!-- Add more education rows as needed -->
+    </div>
+    <!-- Publication Section -->
+    <div class="section">
+        <h2>Publications</h2>
+        <p>I enjoy hiking, reading science fiction, and experimenting with new technologies.</p>
+    </div>
+    <!-- Other Interests Section -->
+    <div class="section">
+        <h2>Other Interests</h2>
+        <p>I enjoy hiking, reading science fiction, and experimenting with new technologies.</p>
+    </div>
+    <!-- Teaching Experience Section -->
+    <div class="section">
+        <h2>Teaching Experience</h2>
+        <p>I have taught courses in computer science and artificial intelligence at XYZ University.</p>
+    </div>
+    <!-- Volunteer Services Section -->
+    <div class="section">
+        <h2>Volunteer Services</h2>
+        <p>I volunteer at local coding bootcamps and mentor young developers in my community.</p>
     </div>
 </body>
 </html>
