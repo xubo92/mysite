@@ -14,25 +14,29 @@
             margin: 0;
             background-color: #f4f4f9;
         }
+        /* title, icons and separator */
         h1 {
             color: #333;
             margin-bottom: 0.2em;
             font-size: 2.5em; /* Increased font size */
             font-weight: 500;
         }
+        h2 {
+            font-size: 2em; /* Increased font size */
+            font-weight: normal;
+        }
+        hr.style-two {	
+            width: 100%;
+            margin: 25px auto;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	    }
         p.desc {
             color: #666;
             font-size: 1.2em;
             margin-top: 0;
         }
-        .education p,
-        .work p,
-        .section p {
-            font-size: 1.2em;
-            margin:5px  auto;
-            line-height: 1.4;
-        }
-        
         .icons {
             margin-top: 0.5em;
         }
@@ -48,23 +52,14 @@
             color: #666;
             margin-top: 5px;
         }
-        hr.style-two {	
-            width: 100%;
-            margin: 25px auto;
-            border: 0;
-            height: 1px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	    }
-        .section {
-            width: 70%;
-            margin: 20px auto;
-            text-align: left; /* Centered text */
-            align-items: center; 
+
+        /* education and work section */
+        .education p,
+        .work p {
+            font-size: 1.2em;
+            margin:5px  auto;
         }
-        h2 {
-            font-size: 2em; /* Increased font size */
-            font-weight: normal;
-        }
+        
         .education, .work, .publication{
             width: 70%;
             margin: 20px auto; /* Center the education section */
@@ -89,6 +84,11 @@
             color: #666;
         }
 
+        /* publication section */
+        .publication{
+            width: 70%;
+            margin: 20px auto; /* Center the education section */
+        }
         .paper {
             display: flex;
             align-items: flex-start;
@@ -118,14 +118,55 @@
             font-size: 0.9em;
             color: #666;
         }
+        
+        /* the other sections */
+        .pet, .service, .award, .other {
+            width: 70%;
+            margin: 20px auto; /* Center the education section */
+        }
+
+        .pet p {
+            font-size: 1.1em;
+            margin:5px  auto;
+            line-height: 1.4;
+        }
+        .service p,
+        .award p,
+        .other p {
+            font-size: 1.2em;
+            margin:5px  auto;
+            line-height: 1.4;
+        } 
+        
         ul {
             list-style-type: disc;
-            font-size: 1.2em;
             padding-left: 12px;
         }
         li {
             margin: 10px 0;
         }
+        .course, .award-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .project {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .project img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+       
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -133,19 +174,19 @@
     <h1>Dr. Xubo Lyu</h1>
     <p class="desc">I like to build AI-driven robotics solutions</p>
     <div class="icons">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="your_email@example.com" id="email-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/xubo92" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/xubo-lyu-243195171/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="email.txt" target="_blank" id="email-icon"><i class="fas fa-envelope"></i></a>
     </div>
     <hr class="style-two">
+
     <!-- Education Section -->
     <div class="education">
         <h2> Eduation </h2>
         <div class="education-row">
             <img src="sfu_logo.png" alt="Simon Fraser University Logo" class="education-logo">
             <div class="education-text">
-                <p>PhD in Computing Science at Simon Fraser University, supervised by Dr. Mo Chen.</p>
+                <p>PhD in Computing Science at Simon Fraser University, supervised by <a href="https://sfumars.com/people/">Dr. Mo Chen</a>.</p>
                 <a href="https://summit.sfu.ca/item/38049" target="_blank" style="text-decoration:none"><p><i>Thesis: "Efficient, interpretable robot learning via control-theoretic approaches".</i></p></a>
             </div>
             <div class="item-time">Sep. 2018 - Jan. 2024</div>
@@ -160,7 +201,7 @@
         <div class="education-row">
             <img src="Northeastern_University_at_Qinhuangdao_logo.png" alt="Northeastern University Logo" class="education-logo">
             <div class="education-text">
-                <p>Bsc in Control Science and Engineering at Northeastern_University.</p>
+                <p>Bsc in Control Science and Engineering at Northeastern University.</p>
             </div>
             <div class="item-time">Sep. 2011 - Jun. 2015</div>
         </div>
@@ -191,7 +232,7 @@
             <div class="citation">
                 <h3>Task-Oriented Koopman-Based Control with Contrastive Encoder.</h3>
                 <p><b>Xubo Lyu</b>, Hanyang Hu, Seth Siriya, Ye Pu, Mo Chen. </p>
-                <p><i>7th Conference on Robot Learning (CoRL), Atlanta, USA, 2023.</i> <b>Recognized as Oral Spotlight paper (6.6% acceptance rate)</b></p>
+                <p><i>7th Conference on Robot Learning (CoRL), Atlanta, USA, 2023.</i> <b>Recognized as Oral Spotlight (6.6% acceptance rate)</b></p>
                 <a href="https://openreview.net/pdf?id=q0VAoefCI2">PDF</a><span> | </span> <a href="pmlr-v229-lyu23a.bib">BibTeX</a>
             </div>
         </div>
@@ -216,29 +257,112 @@
         <!-- Add more publications as needed -->
     </div>
     <!-- Other Interests Section -->
-    <div class="section">
+    <div class="pet">
         <h2>Pet Projects</h2>
-        <p>I enjoy hiking, reading science fiction, and experimenting with new technologies.</p>
+        <!-- <p>I enjoy hiking, reading science fiction, and experimenting with new technologies.</p> -->
+        <div class="project">
+            <img src="aivisionH6.png" alt="a linux board for robotic AI vision" style="width: 150px; height: auto;">
+            <div class="proj_intro">
+                <p>aivisionH6 is one of my ongoing project that aims to provide a powerful but portable linux-driven camera board to apply deep learning method for computer vision tasks.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="ddbot.png" alt="ddbot" style="width: 150px; height: auto;">
+            <div class="proj_intro">
+                <p><a href="https://triplelrobotics.github.io/ddbot/">ddbot</a> is an AI-driven robot I built mainly for educational purpose to anyone who'd like to play with AI features on a robot. It is designed for running machine/deep learning
+                algorithms for visual, audio and control tasks.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="fingerprint.png" alt="fingerprint recognition software">
+            <div class="proj_intro">
+                <p><a href="https://github.com/xubo92/Fingerprint-Recognition-System">fingertap</a> is a simple fingerprint recognition software I built during my undergraduate. It implements several main machine vision algorithms using Python.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="introRL.png" alt="An library for classical RL methods">
+            <div class="proj_intro">
+                <p><a href="https://github.com/xubo92/an-introduction-to-reinforcement-learning">introRL</a> implements a set of classic RL algorithms based on the book "an-introduction-to-reinforcement-learning" by Rich Sutton. I did it as at that time of 2017, 
+                    it's not easy to find a easy-to-understand, complete set of algorithms on RL which is of vital help for freshers who want to get into this field. So I implemented this alongside reading that book.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="crossroad_nav.png" alt="vehicle crossroad navigation">
+            <div class="proj_intro">
+                <p><a href="https://github.com/xubo92/robotics-navigation-deep-reinforcement-learning">crossNavDRL</a> implements a DQN and DDPG algorithms to solve multi-agent navigation scenarios (mainly crossroads) in simulated environment based on SUMO. </p>
+            </div>
+        </div>
     </div>
     <!-- Teaching Experience Section -->
-    <div class="section">
+    <div class="award">
         <h2>Scholarships and Awards</h2>
-        <p>I have taught courses in computer science and artificial intelligence at XYZ University.</p>
+        <ul>
+            <li>
+                <div class="award-item">
+                    <div class="award-name"><p>Helmut & Hugo Eppich Family Grad Schol Scholarship </p></div>
+                    <div class="item-time">Spring 2020, 2021</div>
+                </div>
+            </li>
+            <li>
+                <div class="award-item">
+                    <div class="award-name"><p>Simon Fraser University Graduate Fellowship </p></div>
+                    <div class="item-time">Fall 2018, 2019, 2020, 2021</div>
+                </div>
+            </li>
+            <li>
+                <div class="award-item">
+                    <div class="award-name"><p>Beihang University First-level Graduate Scholarship </p></div>
+                    <div class="item-time">2016</div>
+                </div>
+            </li>
+            <li>
+                <div class="award-item">
+                    <div class="award-name"><p>National Second Prize of Blue-Bridge-Cup Programming Competition </p></div>
+                    <div class="item-time">2015</div>
+                </div>
+            </li>
+            <li>
+                <div class="award-item">
+                    <div class="award-name"><p>NEUQ Technology Innovation Scholarship </p></div>
+                    <div class="item-time">2014</div>
+                </div>
+            </li>
+        </ul>
     </div>
     <!-- Volunteer Services Section -->
-    <div class="section">
+    <div class="service">
         <h2>Academic Service</h2>
         <p>I served as a Teaching Assistant for serveral undergraduate Computer Science courses, creating Q&A for assignments and exams, 
-            grading, holding office hours and giving talks to provide guidance and help for students and professors. 
+            grading, holding office hours, leading project group and giving extra talks to provide help for students and professors. 
             Additionally, I actively volunteer as a paper reviewer for various conferences, including prestigious ones like IROS, ICRA, CoRL, RA-L, and L4DC. </p>
+        <ul>
+            <li>
+                <div class="course">
+                    <div class="course-name"><p>CMPT 419 Robotic Autonomy: Algorithms and Computation </p></div>
+                    <div class="item-time">Spring 2021</div>
+                </div>
+            </li>
+            <li>
+                <div class="course">
+                    <div class="course-name"><p>CMPT 726 Machine Learning</p></div>
+                    <div class="item-time">Fall 2020</div>
+                </div>
+            </li>
+            <li>
+                <div class="course">
+                    <div class="course-name"><p>CMPT 125 Introduction to Computing Science and Programming II</p></div>
+                    <div class="item-time">Spring 2019</div>
+                </div>
+            </li>
+        </ul>
     </div>
     <!-- Volunteer Services Section -->
-    <div class="section">
+    <div class="other">
         <h2>Other Interests</h2>
         <ul>
-            <li>I'm interested in rocket development, space exploration especially building moon base and cities on earth orbit. </li>
-            <li>I like to play table tennis (really good at it :D) and basketball. </li>
-            <li>I also enjoy reading detective fictions.</li>
+            <li><p>I'm interested in rocket development, space exploration especially building moon base and cities on earth orbit.</p> </li>
+            <li><p>I like to play table tennis (really good at it :D) and basketball.</p> </li>
+            <li><p>I also enjoy reading detective fictions.</p></li>
         </ul>
     </div>
 </body>
