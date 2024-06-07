@@ -56,12 +56,12 @@
         /* education and work section */
         .education p,
         .work p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin:5px  auto;
         }
         
-        .education, .work, .publication{
-            width: 70%;
+        .education, .work, .publication {
+            width: 60%;
             margin: 20px auto; /* Center the education section */
         }
         .education-row, .work-row {
@@ -86,7 +86,7 @@
 
         /* publication section */
         .publication{
-            width: 70%;
+            width: 60%;
             margin: 20px auto; /* Center the education section */
         }
         .paper {
@@ -115,13 +115,13 @@
             font-weight: normal;
         }
         .citation p {
-            font-size: 0.9em;
+            font-size: 0.8em;
             color: #666;
         }
         
         /* the other sections */
         .pet, .service, .award, .other {
-            width: 70%;
+            width: 60%;
             margin: 20px auto; /* Center the education section */
         }
 
@@ -132,8 +132,9 @@
         }
         .service p,
         .award p,
-        .other p {
-            font-size: 1.2em;
+        .other p,
+        .quick-view p {
+            font-size: 1.1em;
             margin:5px  auto;
             line-height: 1.4;
         } 
@@ -167,6 +168,27 @@
             border-radius: 8px;
         }
        
+       p.sub_desc {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 0;
+       }
+
+       .quick-view {
+            width: 60%;
+            margin: 20px auto; /* Center the education section */
+        }
+
+        a:link, a:visited {
+            color: #5053e9; 
+            text-decoration: none;
+        }
+
+        .icons a {
+            color: #333;
+        }
+        
+       
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -180,13 +202,27 @@
     </div>
     <hr class="style-two">
 
+
+    <!-- Quick View Section -->
+    <div class="quick-view">
+        <h2>About Me</h2>
+        <p>I hold a PhD in Computing Science from <a href="https://www.sfu.ca/computing.html">Simon Fraser University</a>. Currently, I am working at Ma Robot Responsible AI Inc. 
+            Previously, I have worked as a researcher at <a href="https://www.huawei.com/ca/">Huawei Technologies Canada Co. Ltd</a> and as an engineer at <a href="https://en.horizon.cc/">Horizon Robotics Inc</a>. </p>
+        <br>
+        <p>My research interests include reinforcement learning, optimal control, and robotics. 
+            I have expertise in software development with Python, CircuitPython, ROS, Gazebo, Pybullet, C/C++, and MATLAB. 
+            Additionally, I am skilled in hardware development, including embedded programming (STM32, ESP32, Pi), PCB design (EasyEDA), CAD (SolidWorks), and robotics.</p>
+        <br>
+        <p>Scroll down to see more details or download my <a href="Xubo Lyu CV (Ver 2.0).pdf">CV</a>.</p>
+    </div>
+
     <!-- Education Section -->
     <div class="education">
         <h2> Eduation </h2>
         <div class="education-row">
             <img src="sfu_logo.png" alt="Simon Fraser University Logo" class="education-logo">
             <div class="education-text">
-                <p>PhD in Computing Science at Simon Fraser University, supervised by <a href="https://sfumars.com/people/">Dr. Mo Chen</a>.</p>
+                <p>PhD in Computing Science at Simon Fraser University, supervised by <a href="https://sfumars.com/people/" style="text-decoration:none">Dr. Mo Chen</a>.</p>
                 <a href="https://summit.sfu.ca/item/38049" target="_blank" style="text-decoration:none"><p><i>Thesis: "Efficient, interpretable robot learning via control-theoretic approaches".</i></p></a>
             </div>
             <div class="item-time">Sep. 2018 - Jan. 2024</div>
@@ -213,6 +249,7 @@
             <img src="huawei_logo_padding.png" alt="Huawei Technologies Canada Co. Ltd Logo" class="work-logo">
             <div class="work-text">
                 <p>Associate Researcher, Huawei Technologies Canada Co. Ltd.</p>
+                <p class="sub_desc">Researched advanced multi-robot cooperative system with reinforcement learning.</p>
             </div>
             <div class="item-time">May. 2021 - Mar. 2022</div>
         </div>
@@ -220,6 +257,7 @@
             <img src="horizon_robotics_logo.png" alt="Horizon Robotics Inc Logo" class="work-logo">
             <div class="work-text">
                 <p>Algorithm Engineer, Horizon Robotics Inc.</p>
+                <p class="sub_desc">Built machine learning models for lane line recognition. Developed interactive software for image labelling.</p>
             </div>
             <div class="item-time">Jul. 2016 - Apr. 2017</div>
         </div>
@@ -232,8 +270,8 @@
             <div class="citation">
                 <h3>Task-Oriented Koopman-Based Control with Contrastive Encoder.</h3>
                 <p><b>Xubo Lyu</b>, Hanyang Hu, Seth Siriya, Ye Pu, Mo Chen. </p>
-                <p><i>7th Conference on Robot Learning (CoRL), Atlanta, USA, 2023.</i> <b>Recognized as Oral Spotlight (6.6% acceptance rate)</b></p>
-                <a href="https://openreview.net/pdf?id=q0VAoefCI2">PDF</a><span> | </span> <a href="pmlr-v229-lyu23a.bib">BibTeX</a>
+                <p><i>7th Conference on Robot Learning (CoRL), Atlanta, USA, 2023.</i> <b>Oral Spotlight (6.6% acceptance rate)</b></p>
+                <a href="https://openreview.net/pdf?id=q0VAoefCI2">PDF</a><span> | </span> <a href="pmlr-v229-lyu23a.bib">BibTeX</a> <span> | </span> <a href="https://sites.google.com/view/kpmlilatsupp">More</a>
             </div>
         </div>
         <div class="paper">
@@ -242,7 +280,7 @@
                 <h3>Asynchronous, Option-Based Multi-Agent Policy Gradient: A Conditional Reasoning Approach.</h3>
                 <p><b>Xubo Lyu</b>, Amin Banitalebi-Dehkordi, Mo Chen, Yong Zhang</p>
                 <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, USA, 2023.</i></p>
-                <a href="https://arxiv.org/pdf/2203.15925">PDF</a><span> | </span><a href="ieee-lyu23asynchrl.bib">BibTeX</a>
+                <a href="https://arxiv.org/pdf/2203.15925">PDF</a><span> | </span><a href="ieee-lyu23asynchrl.bib">BibTeX</a> <span> | </span> <a href="https://sites.google.com/view/mahrlsupp">More</a>
             </div>
         </div>
         <div class="paper">
@@ -251,7 +289,16 @@
                 <h3>TTR-Based Reward for Reinforcement Learning with Implicit Model Priors.</h3>
                 <p><b>Xubo Lyu</b>, Mo Chen. </p>
                 <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Las Vegas, USA, 2020.</i></p>
-                <a href="https://arxiv.org/pdf/1903.09762">PDF</a><span> | </span><a href="ieee-lyu20ttr.bib">BibTeX</a>
+                <a href="https://arxiv.org/pdf/1903.09762">PDF</a><span> | </span><a href="ieee-lyu20ttr.bib">BibTeX</a> <span> | </span> <a href="https://sites.google.com/view/ttrpapersupp">More</a>
+            </div>
+        </div>
+        <div class="paper">
+            <img src="mbbpaper_snapshot.png" alt="mbb paper">
+            <div class="citation">
+                <h3>Optimal Control-Based Baseline for Guided Exploration in Policy Gradient Methods.</h3>
+                <p><b>Xubo Lyu</b>, Site Li, Seth Siriya, Ye Pu, Mo Chen</p>
+                <p><i>arXiv preprint arXiv:2011.02073.</i></p>
+                <a href="mbb_a_complete_revision_2.pdf">PDF</a><span> | </span><a href="arxiv-lyu21mbb.bib">BibTeX</a>
             </div>
         </div>
         <!-- Add more publications as needed -->
@@ -270,7 +317,7 @@
             <img src="ddbot.png" alt="ddbot" style="width: 150px; height: auto;">
             <div class="proj_intro">
                 <p><a href="https://triplelrobotics.github.io/ddbot/">ddbot</a> is an AI-driven robot I built mainly for educational purpose to anyone who'd like to play with AI features on a robot. It is designed for running machine/deep learning
-                algorithms for visual, audio and control tasks.</p>
+                algorithms for visual, audio and control tasks. I programme it using <a href="https://circuitpython.org/" style="text-decoration:none">CircuitPython</a>.</p> and design the structure using Solidworks.
             </div>
         </div>
         <div class="project">
@@ -333,8 +380,9 @@
     <div class="service">
         <h2>Academic Service</h2>
         <p>I served as a Teaching Assistant for serveral undergraduate Computer Science courses, creating Q&A for assignments and exams, 
-            grading, holding office hours, leading project group and giving extra talks to provide help for students and professors. 
-            Additionally, I actively volunteer as a paper reviewer for various conferences, including prestigious ones like IROS, ICRA, CoRL, RA-L, and L4DC. </p>
+            grading, holding office hours, leading project group and giving extra talks to provide help for students and professors. </p>
+            <br>
+        <p>Additionally, I actively volunteer as a paper reviewer for various conferences, including prestigious ones like IROS, ICRA, CoRL, RA-L, and L4DC. </p>
         <ul>
             <li>
                 <div class="course">
@@ -360,7 +408,7 @@
     <div class="other">
         <h2>Other Interests</h2>
         <ul>
-            <li><p>I'm interested in rocket development, space exploration especially building moon base and cities on earth orbit.</p> </li>
+            <li><p>I'm interested in rocket development, space exploration especially building moon base and earth-orbit cities.</p> </li>
             <li><p>I like to play table tennis (really good at it :D) and basketball.</p> </li>
             <li><p>I also enjoy reading detective fictions.</p></li>
         </ul>
